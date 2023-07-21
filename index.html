@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind customise -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2a491d",
+              secondary: "#fff",
+              textColor: "#7D8978",
+              ordinary: "#50A72C",
+            },
+            fontSize: {
+              xl: "18px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="grid grid-cols-6 bg-primary items-center">
+        <div class="logo">
+          <div class="flex justify-center">
+            <img src="./assets/images/logo.png" alt="" class="" />
+          </div>
+        </div>
+        <div class="menu col-span-5">
+          <div class="bg-primary px-6">
+            <div class="grid grid-cols-2 justify-between">
+              <div class="flex justify-start items-center">
+                <p
+                  class="text-textColor text-[13px] leading-[23px] font-medium"
+                >
+                  Welcome to our Organic Store Ogenix!
+                </p>
+                <div
+                  class="social-icon bg-[#223d17] text-white text-[15px] ml-5 px-5 py-2"
+                >
+                  <a href="#" class="mx-2"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="mx-2"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="mx-2"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="mx-2"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">
+                <p
+                  class="text-textColor text-[13px] leading-[23px] font-medium mr-4"
+                >
+                  <i class="fa-brands fa-twitter text-white mr-2"></i> + 92 (
+                  307 ) 68 - 06860
+                </p>
+                <p
+                  class="text-textColor text-[13px] leading-[23px] font-medium"
+                >
+                  <i class="fa-brands fa-twitter text-white mr-2"></i> + 92 (
+                  307 ) 68 - 06860
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <nav
+              class="flex justify-between px-6 items-center bg-white"
+              style="box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05)"
+            >
+              <ul class="flex items-center w-3/6 justify-between">
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text[16px] text-[#7d8978] py-8 inline-block"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text[16px] text-[#7d8978] py-8 inline-block"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text[16px] text-[#7d8978] py-8 inline-block"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text[16px] text-[#7d8978] py-8 inline-block"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold text[16px] text-[#7d8978] py-8 inline-block"
+                    >Team</a
+                  >
+                </li>
+              </ul>
+              <div>
+                <button>Shop Now</button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero -->
+
+    <section
+      class="hero h-screen flex items-center"
+      style="
+        background: url('./assets/images/banner-bg.png') no-repeat center center /
+          cover;
+      "
+    >
+      <div class="container">
+        <div class="flex items-center">
+          <div class="w-1/2">
+            <h4
+              class="text-[30px] font-medium leading-[40px] text-[#7d8978] caveat"
+            >
+              Select only oroginal products
+            </h4>
+            <h1
+              class="text-[90px] leading-[90px] mt-7 text-primary font-extrabold mb-6"
+              style="letter-spacing: -0.04em"
+            >
+              Choose the healthy food.
+            </h1>
+            <div class="btn-group">
+              <button class="custom-btn bg-[#ffbd3c] mr-4">Learn More</button>
+              <button class="custom-btn bg-[#50a72c]">Shop Now</button>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us -->
+
+    <section class="about py-32">
+      <div class="container">
+        <div class="grid grid-cols-2 gap-10">
+          <div class="relative ml-[73px] mt-[19px]">
+            <div>
+              <img src="./assets/images/about-one-img-1.png" alt="" />
+            </div>
+            <div class="absolute -z-10 -top-[14px] -left-[73px]">
+              <img src="./assets/images/about-one-shape-1.png" alt="" />
+            </div>
+            <div class="absolute -z-10 -top-[14px] -left-[73px] opacity-25">
+              <img src="./assets/images/about-one-shape-2.png" alt="" />
+            </div>
+            <div class="absolute -z-10 -top-[14px] left-[57px]">
+              <img src="./assets/images/about-one-shape-3.png" alt="" />
+            </div>
+            <div class="absolute -z-10 top-[60px] right-[60px]">
+              <img src="./assets/images/about-one-shape-9.png" alt="" />
+            </div>
+            <div
+              class="bg-ordinary absolute left-12 pl-[40px] w-[335px] p-3 bottom-0 flex items-center text-white rounded-xl"
+            >
+              <span class="text-[40px] leading-[50px] font-extrabold mr-2"
+                >30</span
+              >
+              <h2 class="text-xl leading-9">Years of experience</h2>
+            </div>
+          </div>
+
+          <div class="content">
+            <h4 class="text-ordinary font-bold text-2xl caveat">
+              Farming with Love
+            </h4>
+            <h2
+              class="text-[45px] font-extrabold leading-[55px] text-primary mt-4"
+            >
+              Organic & healthy fresh food provider
+            </h2>
+            <div class="grid grid-cols-2 gap-6 my-10">
+              <div
+                class="w-full py-3 px-6 rounded-md"
+                style="box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.07)"
+              >
+                <i class="fa-brands fa-twitter mr-3"></i>
+                <h4
+                  class="font-extrabold text-[18px] text-primary inline-block"
+                  style="letter-spacing: -0.72px"
+                >
+                  The natural products
+                </h4>
+              </div>
+              <div
+                class="w-full py-3 px-7 rounded-md"
+                style="box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.07)"
+              >
+                <i class="fa-brands fa-twitter mr-3"></i>
+                <h4
+                  class="font-extrabold text-xl text-primary inline-block"
+                  style="letter-spacing: -0.72px"
+                >
+                  Everyday fresh food
+                </h4>
+              </div>
+            </div>
+            <p class="text-xl text-ordinary mb-10 font-extrabold leading-7">
+              We connect buyers and sellers of natural, organic products who are
+              so beguiled demoralized charms of pleasure.
+            </p>
+            <p class="text-textColor font-semibold leading-7 text-[16px]">
+              Aliquam viverra arcu. Donec aliquet blandit enim. Suspendisse id
+              quam sed eros tincidunt luctus sit amet eu nibh egestas tempus
+              turpis, sit amet mattis magna varius non.
+            </p>
+            <div class="my-8 border-b"></div>
+            <div class="flex">
+              <img src="./assets/images/about-one-icon-1.png" alt="" />
+              <h1
+                class="font-extrabold text-primary ml-6 text-2xl leading-7 pr-4"
+              >
+                Every day fresh and quality products for you deliver at doorstep
+              </h1>
+            </div>
+            <button class="custom-btn bg-[#ffbd3c] mt-8">Discover More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories section -->
+
+    <section class="category py-32">
+      <div class="container">
+        <div class="grid grid-cols-4 gap-6">
+          <div>
+            <div class="relative category-img">
+              <img
+                src="./assets/images/categories-one-img-1.jpg "
+                alt=""
+                class="mx-auto rounded-full"
+              />
+            </div>
+            <div class="-mt-[91px] -z-10 relative rounded-xl">
+              <img
+                src="./assets/images/categories-one-content-shape-1.png"
+                alt=""
+              />
+              <div class="content absolute top-1/2 text-center px-8">
+                <h3
+                  style="letter-spacing: -0.8px"
+                  class="text-[20px] leading-8 text-primary font-extrabold"
+                >
+                  Vegetables
+                </h3>
+                <p class="text-sm text-textColor font-medium leading-7">
+                  When nothing prevents our to we like best be.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="relative category-img">
+              <img
+                src="./assets/images/categories-one-img-1.jpg "
+                alt=""
+                class="mx-auto rounded-full"
+              />
+            </div>
+            <div class="-mt-[91px] -z-10 relative rounded-xl">
+              <img
+                src="./assets/images/categories-one-content-shape-1.png"
+                alt=""
+              />
+              <div class="content absolute top-1/2 text-center px-8">
+                <h3
+                  style="letter-spacing: -0.8px"
+                  class="text-[20px] leading-8 text-primary font-extrabold"
+                >
+                  Vegetables
+                </h3>
+                <p class="text-sm text-textColor font-medium leading-7">
+                  When nothing prevents our to we like best be.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="relative category-img">
+              <img
+                src="./assets/images/categories-one-img-1.jpg "
+                alt=""
+                class="mx-auto rounded-full"
+              />
+            </div>
+            <div class="-mt-[91px] -z-10 relative rounded-xl">
+              <img
+                src="./assets/images/categories-one-content-shape-1.png"
+                alt=""
+              />
+              <div class="content absolute top-1/2 text-center px-8">
+                <h3
+                  style="letter-spacing: -0.8px"
+                  class="text-[20px] leading-8 text-primary font-extrabold"
+                >
+                  Vegetables
+                </h3>
+                <p class="text-sm text-textColor font-medium leading-7">
+                  When nothing prevents our to we like best be.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="relative category-img">
+              <img
+                src="./assets/images/categories-one-img-1.jpg "
+                alt=""
+                class="mx-auto rounded-full"
+              />
+            </div>
+            <div class="-mt-[91px] -z-10 relative rounded-xl">
+              <img
+                src="./assets/images/categories-one-content-shape-1.png"
+                alt=""
+              />
+              <div class="content absolute top-1/2 text-center px-8">
+                <h3
+                  style="letter-spacing: -0.8px"
+                  class="text-[20px] leading-8 text-primary font-extrabold"
+                >
+                  Vegetables
+                </h3>
+                <p class="text-sm text-textColor font-medium leading-7">
+                  When nothing prevents our to we like best be.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+
+    <section class="hero py-16">
+      <div class="container">
+        <div class="grid grid-cols-2 gap-8">
+          <div
+            class="w-full bg-primary relative p-12 rounded-2xl overflow-hidden"
+          >
+            <div class="absolute top-1/2 -translate-y-1/2 -right-[168px] z-30">
+              <img src="./assets/images/banner-img-1.png" alt="" />
+            </div>
+            <div class="absolute top-1/2 -translate-y-1/2 left-[227px] z-20">
+              <img src="./assets/images/banner-shape-2.png" alt="" />
+            </div>
+            <div class="absolute -top-3 left-[200px] z-20">
+              <img src="./assets/images/banner-shape-3.png" alt="" />
+            </div>
+            <div
+              class="absolute top-1/2 -translate-y-1/2 left-0 z-0 mix-blend-color-dodge"
+            >
+              <img src="./assets/images/banner-shape-1.png" alt="" />
+            </div>
+            <div class="text-white relative z-30">
+              <h4 class="text-2xl leading-8 font-bold caveat">100% Organic</h4>
+              <h2
+                class="text-4xl leading-[42px] font-extrabold mb-8 mt-3"
+                style="letter-spacing: -1.4px"
+              >
+                Quality organic <br />
+                food store
+              </h2>
+              <button class="custom-btn bg-[#ffbd3c] mr-4">Shop Now</button>
+            </div>
+          </div>
+          <div
+            class="w-full bg-primary relative p-12 rounded-2xl overflow-hidden"
+          >
+            <div class="absolute top-1/2 -translate-y-1/2 -right-[168px] z-30">
+              <img src="./assets/images/banner-img-1.png" alt="" />
+            </div>
+            <div class="absolute top-1/2 -translate-y-1/2 left-[227px] z-20">
+              <img src="./assets/images/banner-shape-2.png" alt="" />
+            </div>
+            <div class="absolute -top-3 left-[200px] z-20">
+              <img src="./assets/images/banner-shape-3.png" alt="" />
+            </div>
+            <div
+              class="absolute top-1/2 -translate-y-1/2 left-0 z-0 mix-blend-color-dodge"
+            >
+              <img src="./assets/images/banner-shape-1.png" alt="" />
+            </div>
+            <div class="text-white relative z-30">
+              <h4 class="text-2xl leading-8 font-bold caveat">100% Organic</h4>
+              <h2
+                class="text-4xl leading-[42px] font-extrabold mb-8 mt-3"
+                style="letter-spacing: -1.4px"
+              >
+                Quality organic <br />
+                food store
+              </h2>
+              <button class="custom-btn bg-[#ffbd3c] mr-4">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product -->
+
+    <section class="product">
+      <div class="container">
+        <div class="grid grid-cols-5">
+          <div class="border-[#eaeae2] border rounded-lg">
+            <img src="./assets/images/hot-product-1-1.jpg" alt="" />
+            <div class="text-center">
+              <div class="rating">
+                <i class="fa-solid fa-star text-xs text-[#ffbc3b] mx-1"></i>
+                <i class="fa-solid fa-star text-xs text-[#ffbc3b] mx-1"></i>
+                <i class="fa-solid fa-star text-xs text-[#ffbc3b] mx-1"></i>
+                <i class="fa-solid fa-star text-xs text-[#ffbc3b] mx-1"></i>
+                <i class="fa-solid fa-star text-xs text-[#ffbc3b] mx-1"></i>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
