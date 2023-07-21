@@ -32,3 +32,15 @@ body {
   transform: translateX(-50%);
   z-index: -5;
 }
+.team-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 115px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #2a491d;
+  border-radius: 140px 140px 0 0;
+  z-index: -50;
+}
