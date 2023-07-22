@@ -54,15 +54,42 @@ body {
   top: 100%;
   left: 0;
 }
+.gallery-card::after {
+  transition: opacity 500ms ease, top 700ms ease;
+}
 .gallery-card:hover::after {
   top: 0;
   opacity: 0.3;
-  transition: opacity 500ms ease, top 700ms ease;
 }
 .gallery-card-info {
   top: 40%;
+  transition: top 700ms ease;
 }
 .gallery-card-parent:hover .gallery-card-info {
   top: 67%;
-  transition: top 700ms ease;
+}
+.apartment::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 11px;
+  background: #999;
+  opacity: 0.8;
+  right: -12px;
+  top: 52%;
+  transform: translateY(-50%);
+}
+.footer-cat::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 3px;
+  right: 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(80, 167, 44) 0%,
+    rgb(255, 189, 60) 100%
+  );
+  right: 16px;
+  top: 50%;
 }
