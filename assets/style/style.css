@@ -44,3 +44,25 @@ body {
   border-radius: 140px 140px 0 0;
   z-index: -50;
 }
+.gallery-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(42, 73, 29);
+  opacity: 0;
+  top: 100%;
+  left: 0;
+}
+.gallery-card:hover::after {
+  top: 0;
+  opacity: 0.3;
+  transition: opacity 500ms ease, top 700ms ease;
+}
+.gallery-card-info {
+  top: 40%;
+}
+.gallery-card-parent:hover .gallery-card-info {
+  top: 67%;
+  transition: top 700ms ease;
+}
