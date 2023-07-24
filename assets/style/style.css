@@ -10,13 +10,13 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-.custom-btn {
-  padding: 12px 40px;
-  font-weight: 800;
+.menu .social-icon a {
   font-size: 14px;
-  border-radius: 25px;
-  color: #fff;
 }
+.menu .social-icon a:not(:first-child) {
+  margin-left: 25px;
+}
+
 .caveat {
   font-family: "Caveat", cursive;
 }
@@ -92,4 +92,53 @@ body {
   );
   right: 16px;
   top: 50%;
+}
+.call::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 6px;
+  bottom: 5px;
+  background: #999;
+  right: -30px;
+  opacity: 0.8;
+}
+.custom-btn {
+  position: relative;
+  padding: 14px 40px;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 25px;
+  color: #fff;
+  z-index: 1;
+}
+.custom-btn::after,
+.custom-btn-two::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #4a9e27;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  transition: all 0.5s linear;
+  z-index: -1;
+}
+.custom-btn-two::after {
+  background-color: #f7b534;
+}
+.services-details::after {
+  content: "";
+  background: #50a72c;
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  opacity: 0.1;
+  /* z-index: -1; */
 }

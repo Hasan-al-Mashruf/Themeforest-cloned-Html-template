@@ -57,50 +57,49 @@
   <body>
     <!-- header -->
     <header>
-      <div class="grid grid-cols-6 bg-primary items-center">
+      <div
+        class="grid bg-primary items-center"
+        style="grid-template-columns: 18% 82%"
+      >
         <div class="logo">
           <div class="flex justify-center">
             <img src="./assets/images/logo.png" alt="" class="" />
           </div>
         </div>
-        <div class="menu col-span-5">
+        <div class="menu">
           <div class="bg-primary px-6">
             <div class="grid grid-cols-2 justify-between">
               <div class="flex justify-start items-center">
                 <p
-                  class="text-textColor text-[13px] leading-[23px] font-medium"
+                  class="text-[#91A589] text-[13px] leading-[23px] font-medium"
                 >
                   Welcome to our Organic Store Ogenix!
                 </p>
                 <div
-                  class="social-icon bg-[#223d17] text-white text-[15px] ml-5 px-5 py-2"
+                  class="social-icon bg-[#223d17] text-white text-[15px] ml-5 px-10 py-2"
                 >
-                  <a href="#" class="mx-2"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a href="#" class="mx-2"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                  <a href="#" class="mx-2"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                  <a href="#" class="mx-2"
-                    ><i class="fa-brands fa-pinterest"></i
-                  ></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
                 </div>
               </div>
               <div class="flex justify-end items-center">
                 <p
-                  class="text-textColor text-[13px] leading-[23px] font-medium mr-4"
+                  class="text-[#91A589] text-[13px] leading-[23px] font-medium call relative"
                 >
-                  <i class="fa-brands fa-twitter text-white mr-2"></i> + 92 (
-                  307 ) 68 - 06860
+                  <i
+                    class="fa-solid fa-mobile mr-2 text-[#ffbd3c] text-[15px]"
+                  ></i>
+                  + 92 ( 307 ) 68 - 06860
                 </p>
                 <p
-                  class="text-textColor text-[13px] leading-[23px] font-medium"
+                  class="text-[#91A589] text-[13px] leading-[23px] font-medium ml-[60px]"
                 >
-                  <i class="fa-brands fa-twitter text-white mr-2"></i> + 92 (
-                  307 ) 68 - 06860
+                  <i
+                    class="fa-solid fa-envelope-open mr-2 text-[#ffbd3c] text-[15px]"
+                  ></i>
+                  needhelp@company.com
                 </p>
               </div>
             </div>
@@ -148,7 +147,7 @@
                 </li>
               </ul>
               <div>
-                <button>Shop Now</button>
+                <button class="custom-btn bg-[#50a72c]">Shop Now</button>
               </div>
             </nav>
           </div>
@@ -159,38 +158,170 @@
     <!-- hero -->
 
     <section
-      class="hero h-screen flex items-center"
-      style="
-        background: url('./assets/images/banner-bg.png') no-repeat center center /
-          cover;
-      "
+      class="hero flex items-center relative bg-[#f3f3ed] z-10 overflow-hidden pb-[200px] pt-[196px]"
     >
+      <div
+        class="absolute top-0 left-0 right-0 bottom-0 -z-10 opacity-80"
+        style="
+          background: url('./assets/images/banner-bg.png') no-repeat center
+            center / cover;
+        "
+      ></div>
       <div class="container">
         <div class="flex items-center">
-          <div class="w-1/2">
+          <div class="w-1/2 relative z-50">
+            <div class="absolute left-[460px] top-5">
+              <img src="./assets/images/main-slider-shape-9.png" alt="" />
+            </div>
             <h4
-              class="text-[30px] font-medium leading-[40px] text-[#7d8978] caveat"
+              class="text-[30px] font-medium leading-[30px] text-[#7d8978] caveat"
             >
               Select only oroginal products
             </h4>
             <h1
-              class="text-[90px] leading-[90px] mt-7 text-primary font-extrabold mb-6"
+              class="text-[90px] leading-[90px] mt-7 text-primary font-extrabold mb-[39px]"
               style="letter-spacing: -0.04em"
             >
               Choose the healthy food.
             </h1>
             <div class="btn-group">
-              <button class="custom-btn bg-[#ffbd3c] mr-4">Learn More</button>
+              <button class="custom-btn-two custom-btn bg-[#ffbd3c] mr-4">
+                Learn More
+              </button>
               <button class="custom-btn bg-[#50a72c]">Shop Now</button>
             </div>
           </div>
           <div>
-            <img src="./assets/images/banner.png" alt="" />
+            <div class="absolute top-[100px] right-20">
+              <img src="./assets/images/banner.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute top-[100px] left-[115px]">
+        <img src="./assets/images/main-slider-shape-1.png" alt="" />
+      </div>
+      <div class="absolute bottom-[75px] left-[260px]">
+        <img src="./assets/images/main-slider-shape-2.png" alt="" />
+      </div>
+      <div class="absolute bottom-[100px] right-[795px]">
+        <img src="./assets/images/main-slider-shape-5.png" alt="" />
+      </div>
+      <div class="absolute bottom-[-60px] right-[170px]">
+        <img src="./assets/images/main-slider-shape-8.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services -mt-5 relative z-50">
+      <div class="container" style="max-width: 1500px !important">
+        <div
+          style="box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07)"
+          class="py-9 px-6 rounded-xl bg-white"
+        >
+          <div class="grid grid-cols-4 gap-10">
+            <div>
+              <div class="relative">
+                <div class="flex items-center services-details relative">
+                  <img
+                    src="./assets/images/logistics.png"
+                    alt=""
+                    class="w-16"
+                  />
+                  <div class="ml-6">
+                    <h3
+                      class="text-xl leading-[26px] text-[#2A491D] font-extrabold"
+                      style="letter-spacing: -0.72px"
+                    >
+                      Return Policy
+                    </h3>
+                    <p
+                      class="text-textColor text-md leading-[26px] font-medium"
+                    >
+                      Money back guarantee
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="relative">
+                <div class="flex items-center services-details relative">
+                  <img
+                    src="./assets/images/logistics.png"
+                    alt=""
+                    class="w-16"
+                  />
+                  <div class="ml-6">
+                    <h3
+                      class="text-xl leading-[26px] text-[#2A491D] font-extrabold"
+                      style="letter-spacing: -0.72px"
+                    >
+                      Return Policy
+                    </h3>
+                    <p
+                      class="text-textColor text-md leading-[26px] font-medium"
+                    >
+                      Money back guarantee
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="relative">
+                <div class="flex items-center services-details relative">
+                  <img
+                    src="./assets/images/logistics.png"
+                    alt=""
+                    class="w-16"
+                  />
+                  <div class="ml-6">
+                    <h3
+                      class="text-xl leading-[26px] text-[#2A491D] font-extrabold"
+                      style="letter-spacing: -0.72px"
+                    >
+                      Return Policy
+                    </h3>
+                    <p
+                      class="text-textColor text-md leading-[26px] font-medium"
+                    >
+                      Money back guarantee
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="relative">
+                <div class="flex items-center services-details relative">
+                  <img
+                    src="./assets/images/logistics.png"
+                    alt=""
+                    class="w-16"
+                  />
+                  <div class="ml-6">
+                    <h3
+                      class="text-xl leading-[26px] text-[#2A491D] font-extrabold"
+                      style="letter-spacing: -0.72px"
+                    >
+                      Return Policy
+                    </h3>
+                    <p
+                      class="text-textColor text-md leading-[26px] font-medium"
+                    >
+                      Money back guarantee
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- about us -->
 
     <section class="about py-32">
