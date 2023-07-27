@@ -167,6 +167,14 @@
             center / cover;
         "
       ></div>
+      <div
+        class="absolute top-0 left-0 right-0 bottom-0 -z-10 opacity-[.12]"
+        style="
+          background: url('./assets/images/main-slider-bg-shape-two.png')
+            no-repeat center center / cover;
+        "
+      ></div>
+
       <div class="container">
         <div class="flex items-center">
           <div class="w-1/2 relative z-50">
@@ -320,7 +328,7 @@
     </section>
     <!-- about us -->
 
-    <section class="about py-[120px]">
+    <section class="about py-[120px] relative">
       <div class="container">
         <div class="grid grid-cols-2 gap-10">
           <div class="relative ml-[73px] mt-[26px]">
@@ -430,6 +438,9 @@
           </div>
         </div>
       </div>
+      <div class="-z-10 right-0 bottom-[-38px] float-y absolute">
+        <img src="./assets/images/about-one-shape-11.png" alt="" />
+      </div>
     </section>
 
     <!-- categories section -->
@@ -449,7 +460,7 @@
           </h2>
         </div>
         <div class="grid grid-cols-4 gap-6">
-          <div>
+          <div class="category-card relative">
             <div class="relative category-img">
               <img
                 src="./assets/images/categories-one-img-1.jpg "
@@ -474,8 +485,13 @@
                 </p>
               </div>
             </div>
+            <div
+              class="w-12 h-12 rounded-full bg-ordinary flex justify-center items-center absolute left-1/2 -translate-x-1/2 -bottom-6 opacity-0 icon"
+            >
+              <i class="fa-solid fa-arrow-right-long text-white"></i>
+            </div>
           </div>
-          <div>
+          <div class="category-card relative">
             <div class="relative category-img">
               <img
                 src="./assets/images/categories-one-img-2.jpg "
@@ -500,8 +516,13 @@
                 </p>
               </div>
             </div>
+            <div
+              class="w-12 h-12 rounded-full bg-ordinary flex justify-center items-center absolute left-1/2 -translate-x-1/2 -bottom-6 opacity-0 icon"
+            >
+              <i class="fa-solid fa-arrow-right-long text-white"></i>
+            </div>
           </div>
-          <div>
+          <div class="category-card relative">
             <div class="relative category-img">
               <img
                 src="./assets/images/categories-one-img-3.jpg "
@@ -526,8 +547,13 @@
                 </p>
               </div>
             </div>
+            <div
+              class="w-12 h-12 rounded-full bg-ordinary flex justify-center items-center absolute left-1/2 -translate-x-1/2 -bottom-6 opacity-0 icon"
+            >
+              <i class="fa-solid fa-arrow-right-long text-white"></i>
+            </div>
           </div>
-          <div>
+          <div class="category-card relative">
             <div class="relative category-img">
               <img
                 src="./assets/images/categories-one-img-4.jpg "
@@ -551,6 +577,11 @@
                   When nothing prevents our to we like best be.
                 </p>
               </div>
+            </div>
+            <div
+              class="w-12 h-12 rounded-full bg-ordinary flex justify-center items-center absolute left-1/2 -translate-x-1/2 -bottom-6 opacity-0 icon"
+            >
+              <i class="fa-solid fa-arrow-right-long text-white"></i>
             </div>
           </div>
         </div>
@@ -645,7 +676,9 @@
           </h2>
         </div>
         <div class="grid grid-cols-5 gap-8">
-          <div class="border-[#eaeae2] border rounded-lg pb-8">
+          <div
+            class="border-[#eaeae2] border rounded-lg pb-8 product-card relative overflow-hidden"
+          >
             <img src="./assets/images/hot-product-1-1.jpg" alt="" class="p-2" />
             <div class="text-center">
               <div class="rating">
@@ -668,6 +701,12 @@
                   Add to cart
                 </button>
               </div>
+            </div>
+            <div
+              class="social-icon text-[15px] flex flex-col absolute top-5 -right-10 opacity-0"
+            >
+              <a hrefs="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
           </div>
           <div class="border-[#eaeae2] border rounded-lg pb-8">
