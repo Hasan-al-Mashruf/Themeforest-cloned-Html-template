@@ -200,3 +200,54 @@ body {
 .footer-gallery-img:hover img {
   transform: scale(1.05);
 }
+/* animation */
+.float-y,
+.float-x,
+.zoom-in-out {
+  animation-name: float-bob-y;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.float-x {
+  animation-name: float-bob-x;
+}
+.zoom-in-out {
+  animation-name: zoom-in-out;
+}
+@keyframes float-bob-y {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes float-bob-x {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+@keyframes zoom-in-out {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+}
