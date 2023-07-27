@@ -140,5 +140,36 @@ body {
   height: 46px;
   border-radius: 50%;
   opacity: 0.1;
-  /* z-index: -1; */
+}
+.team .social-icon a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #223d17;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0;
+}
+.blog-card-img img {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+}
+.blog-card-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(42, 73, 29);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out 0.1s;
+}
+.blog-card:hover .blog-card-img::after {
+  opacity: 0.8;
+}
+.blog-card:hover .blog-card-img img {
+  transform: scale(1);
 }
