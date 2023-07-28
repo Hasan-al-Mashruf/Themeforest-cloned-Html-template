@@ -82,6 +82,26 @@ body {
   border-radius: 140px 140px 0 0;
   z-index: -50;
 }
+.team-member:hover .team-card::after {
+  top: 115px;
+}
+
+.team-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #50a72c;
+  border-radius: 140px 140px 0 0;
+  z-index: -30;
+  transition: top 0.6s ease-in-out 0.1s;
+}
+.gallery-card {
+  transition: 0.4s ease-in-out;
+}
 .gallery-card::after {
   content: "";
   position: absolute;
@@ -101,10 +121,15 @@ body {
 }
 .gallery-card-info {
   top: 40%;
-  transition: top 700ms ease;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
 .gallery-card-parent:hover .gallery-card-info {
+  opacity: 1;
   top: 67%;
+}
+.gallery-card-parent:hover .gallery-card {
+  transform: translateY(-20px);
 }
 .apartment::after {
   content: "";
