@@ -99,6 +99,44 @@ body {
   z-index: -30;
   transition: top 0.6s ease-in-out 0.1s;
 }
+.item::after {
+  content: "";
+  position: absolute;
+  bottom: -49px;
+  left: 50%;
+  background: url(../images/testimonial-one-shape-4.png) no-repeat center center /
+    contain;
+  width: 91px;
+  height: 49px;
+}
+.testimonials .owl-item {
+  visibility: hidden;
+}
+.testimonials .owl-item.active {
+  visibility: visible;
+}
+.testimonials .owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+.testimonials .owl-carousel .owl-item img {
+  display: block;
+  width: unset !important;
+}
+button.owl-prev,
+button.owl-next {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 50% !important;
+  border: 2px solid rgba(42, 73, 29, 0.2) !important;
+  color: rgba(42, 73, 29, 0.2) !important;
+  font-size: 16px !important;
+}
+.owl-nav {
+  position: absolute;
+  left: -110px;
+  bottom: 38px;
+  transform: rotate(89deg);
+}
 .gallery-card {
   transition: 0.4s ease-in-out;
 }
