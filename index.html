@@ -56,7 +56,7 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <!-- <header>
       <div
         class="grid bg-primary items-center"
         style="grid-template-columns: 18% 82%"
@@ -177,7 +177,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- hero -->
 
@@ -211,10 +211,11 @@
               Select only oroginal products
             </h4>
             <h1
-              class="text-[90px] leading-[90px] mt-7 text-primary font-extrabold mb-[39px]"
+              class="md:text-[90px] text-[58px] md:leading-[90px] leading-[58px] mt-7 text-primary font-extrabold mb-[39px]"
               style="letter-spacing: -0.04em"
             >
-              Choose the healthy food.
+              Choose the <br />
+              healthy food.
             </h1>
             <div class="btn-group">
               <button class="custom-btn-two custom-btn bg-[#ffbd3c] mr-4">
@@ -254,7 +255,7 @@
           class="py-9 px-6 rounded-xl bg-white"
         >
           <div
-            class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-2 md:gap-4 md:gap-y-8"
+            class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-2 md:gap-4 gap-y-8"
           >
             <div>
               <div class="relative">
@@ -357,7 +358,7 @@
     <section class="about py-[120px] relative">
       <div class="container">
         <div class="grid lg:grid-cols-2 gap-10">
-          <div class="relative ml-[73px] mt-[26px]">
+          <div class="relative md:ml-[73px] mt-[26px]">
             <div>
               <img
                 src="./assets/images/about-one-img-1.png"
@@ -365,7 +366,9 @@
                 class="w-full md:w-[90%]"
               />
             </div>
-            <div class="absolute -z-10 lg:-top-[14px] md:bottom-0 -left-[73px]">
+            <div
+              class="absolute -z-10 lg:-top-[14px] md:bottom-0 md:-left-[73px] bottom-0 left-0"
+            >
               <img src="./assets/images/about-one-shape-1.png" alt="" />
             </div>
             <div class="absolute -z-10 -top-[14px] -left-[73px] opacity-25">
@@ -401,7 +404,7 @@
             </div>
           </div>
 
-          <div class="content md:px-16 lg:px-0">
+          <div class="content md:px-16 lg:px-0 px-4">
             <h4 class="text-ordinary font-bold text-2xl caveat">
               Farming with Love
             </h4>
@@ -410,7 +413,7 @@
             >
               Organic & healthy fresh food provider
             </h2>
-            <div class="grid grid-cols-2 gap-6 mt-10 mb-[30px]">
+            <div class="grid md:grid-cols-2 gap-6 mt-10 mb-[30px]">
               <div
                 class="w-full py-4 px-6 rounded-md flex items-center"
                 style="box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.07)"
@@ -454,8 +457,12 @@
               turpis, sit amet mattis magna varius non.
             </p>
             <div class="mt-[30px] mb-10 border-b"></div>
-            <div class="flex">
-              <img src="./assets/images/about-one-icon-1.png" alt="" />
+            <div class="flex items-center">
+              <img
+                src="./assets/images/about-one-icon-1.png"
+                alt=""
+                style="width: auto"
+              />
               <h1
                 class="font-extrabold text-primary ml-6 text-2xl leading-7 pr-4"
               >
@@ -498,11 +505,11 @@
                 class="mx-auto rounded-full"
               />
             </div>
-            <div class="-mt-[91px] -z-10 relative rounded-xl">
+            <div class="-mt-[91px] -z-10 relative rounded-xl overflow-hidden">
               <img
                 src="./assets/images/categories-one-content-shape-1.png"
                 alt=""
-                class="w-full"
+                class="w-full relative md:top-0 -top-10"
               />
               <div class="content absolute top-1/2 text-center px-8">
                 <h3
@@ -530,11 +537,11 @@
                 class="mx-auto rounded-full"
               />
             </div>
-            <div class="-mt-[91px] -z-10 relative rounded-xl">
+            <div class="-mt-[91px] -z-10 relative rounded-xl overflow-hidden">
               <img
                 src="./assets/images/categories-one-content-shape-2.png"
                 alt=""
-                class="w-full"
+                class="w-full relative md:top-0 -top-10"
               />
               <div class="content absolute top-1/2 text-center px-8">
                 <h3
@@ -562,11 +569,11 @@
                 class="mx-auto rounded-full"
               />
             </div>
-            <div class="-mt-[91px] -z-10 relative rounded-xl">
+            <div class="-mt-[91px] -z-10 relative rounded-xl overflow-hidden">
               <img
                 src="./assets/images/categories-one-content-shape-3.png"
                 alt=""
-                class="w-full"
+                class="w-full relative md:top-0 -top-10"
               />
               <div class="content absolute top-1/2 text-center px-8">
                 <h3
@@ -594,11 +601,11 @@
                 class="mx-auto rounded-full"
               />
             </div>
-            <div class="-mt-[91px] -z-10 relative rounded-xl">
+            <div class="-mt-[91px] -z-10 relative rounded-xl overflow-hidden">
               <img
                 src="./assets/images/categories-one-content-shape-4.png"
                 alt=""
-                class="w-full"
+                class="w-full relative md:top-0 -top-10"
               />
               <div class="content absolute top-1/2 text-center px-8">
                 <h3
@@ -1101,7 +1108,7 @@
 
     <!-- testimonials -->
 
-    <section class="testimonials relative overflow-hidden">
+    <!-- <section class="testimonials relative overflow-hidden">
       <div
         style="
           background: url('./assets/images/testimonial-one__bg-img.jpg')
@@ -1324,13 +1331,13 @@
           <img src="./assets/images/testimonial-one-shape-3.png" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- gallery -->
 
     <section class="gallery py-[120px]">
       <div class="container" style="max-width: 1600px !important">
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-6 md:gap-10">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-6 gap-10">
           <div class="relative gallery-card-parent">
             <div class="relative gallery-card overflow-hidden">
               <img
@@ -1552,7 +1559,7 @@
           </h2>
         </div>
         <div class="grid lg:grid-cols-3 gap-6">
-          <div class="relative rondued-md blog-card md:mb-32">
+          <div class="relative rondued-md blog-card lg:mb-0 mb-32">
             <div class="blog-card-img relative z-0 overflow-hidden rounded-md">
               <img src="./assets/images/news-1-1.jpg" alt="" class="w-full" />
             </div>
@@ -1611,7 +1618,7 @@
               </div>
             </div>
           </div>
-          <div class="relative rondued-md blog-card md:mb-32">
+          <div class="relative rondued-md blog-card lg:mb-0 mb-32">
             <div class="blog-card-img relative z-0 overflow-hidden rounded-md">
               <img src="./assets/images/news-1-2.jpg" alt="" class="w-full" />
             </div>
@@ -1670,7 +1677,7 @@
               </div>
             </div>
           </div>
-          <div class="relative rondued-md blog-card md:mb-32">
+          <div class="relative rondued-md blog-card lg:mb-0 md:mb-32">
             <div class="blog-card-img relative z-0 overflow-hidden rounded-md">
               <img src="./assets/images/news-1-3.jpg" alt="" class="w-full" />
             </div>
@@ -1754,13 +1761,13 @@
           </div>
 
           <div
-            class="bg-ordinary p-[60px] rounded-[50px] rounded-t-none relative z-0 overflow-hidden"
+            class="bg-ordinary md:p-[60px] px-[20px] py-[60px] rounded-[50px] rounded-t-none relative z-0 overflow-hidden"
           >
             <div class="absolute right-[-30px] top-0 opacity-40 z-0 float-x">
               <img src="./assets/images/subscribe-one-shape-3.png" alt="" />
             </div>
-            <div class="grid lg:grid-cols-2 items-center md:gap-y-8">
-              <div class="flex items-center md:justify-center">
+            <div class="grid lg:grid-cols-2 items-center lg:gap-0 gap-y-8">
+              <div class="flex md:items-center md:justify-center">
                 <img src="./assets/images/subscribe.png" alt="" class="w-14" />
                 <div class="ml-4">
                   <h4
@@ -1823,7 +1830,7 @@
         class="container"
         style="padding-top: 208px !important; padding-bottom: 96px !important"
       >
-        <div class="grid footer-grid md:grid-cols-2 md:gap-y-8">
+        <div class="grid footer-grid md:grid-cols-2 lg:gap-y-8 gap-y-8">
           <div>
             <img src="./assets/images/logo.png" alt="" />
             <h1

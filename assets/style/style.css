@@ -10,6 +10,13 @@ body {
     max-width: 1200px !important;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about .container {
+    padding: 0 !important;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
