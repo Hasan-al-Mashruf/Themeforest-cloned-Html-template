@@ -20,7 +20,15 @@ body {
 .menu .social-icon a:not(:first-child) {
   margin-left: 25px;
 }
-
+.menu .right-bar::before {
+  content: "";
+  position: absolute;
+  background: #eaeae2;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
 .caveat {
   font-family: "Caveat", cursive;
 }

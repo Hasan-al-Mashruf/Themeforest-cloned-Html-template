@@ -68,7 +68,7 @@
         </div>
         <div class="menu">
           <div class="bg-primary px-6">
-            <div class="grid grid-cols-2 justify-between">
+            <div class="topbar lg:grid grid-cols-2 justify-between hidden">
               <div class="flex justify-start items-center">
                 <p
                   class="text-[#91A589] text-[13px] leading-[23px] font-medium"
@@ -109,7 +109,13 @@
               class="flex justify-between px-6 items-center bg-white"
               style="box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05)"
             >
-              <ul class="flex items-center w-3/6 justify-between">
+              <a
+                href="#"
+                class="font-semibold text[16px] text-[#7d8978] py-8 inline-block lg:hidden"
+                ><i class="fa-solid fa-bars"></i
+              ></a>
+
+              <ul class="lg:flex items-center w-3/6 justify-between md:hidden">
                 <li>
                   <a
                     href="#"
@@ -146,7 +152,25 @@
                   >
                 </li>
               </ul>
-              <div>
+
+              <div class="flex items-center right-bar relative pl-8">
+                <a
+                  href=""
+                  class="text-[#2a491d] font-light mr-3 capitalize text-md"
+                >
+                  <i
+                    class="fa fa-search pr-2 text-[#2a491d]"
+                    aria-hidden="true"
+                  ></i>
+                  search here
+                </a>
+                <a
+                  href="#"
+                  class="font-semibold text[16px] text-[#7d8978] lg:hidden w-12 mx-3 h-12 bg-[#ffbd3c] text-white inline-block rounded-full text-center leading-[48px]"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
                 <button class="custom-btn bg-[#50a72c]">Shop Now</button>
               </div>
             </nav>
