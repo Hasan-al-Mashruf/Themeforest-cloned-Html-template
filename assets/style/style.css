@@ -4,6 +4,7 @@
 body {
   /* all color */
   font-family: "Manrope", sans-serif;
+  overflow-x: clip;
 }
 .mobile-menu {
   transition: left 0.5s linear 0.1s;
@@ -344,7 +345,7 @@ button.owl-next {
 }
 @media screen and (min-width: 1024px) {
   .footer-grid {
-    grid-template-columns: 30% 16% 25% 25%;
+    grid-template-columns: 30% 16% 25% 25% !important;
     gap: 10px;
   }
   .item {
