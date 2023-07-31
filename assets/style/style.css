@@ -305,6 +305,16 @@ button.owl-next {
 .footer-gallery-img:hover img {
   transform: scale(1.05);
 }
+@media screen and (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 30% 16% 25% 25%;
+    gap: 10px;
+  }
+  .item {
+    width: 395px;
+  }
+}
+
 /* animation */
 .float-y,
 .float-x,

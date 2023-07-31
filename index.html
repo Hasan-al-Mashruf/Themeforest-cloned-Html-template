@@ -866,7 +866,7 @@
     >
       <div class="container relative z-10">
         <div class="grid lg:grid-cols-2">
-          <div class="mr-[80px]">
+          <div class="lg:mr-[80px]">
             <h4 class="caveat text-2xl text-ordinary font-bold">
               Why Choose Ogenix
             </h4>
@@ -1077,7 +1077,7 @@
 
     <!-- testimonials -->
 
-    <!-- <section class="testimonials relative overflow-hidden">
+    <section class="testimonials relative overflow-hidden">
       <div
         style="
           background: url('./assets/images/testimonial-one__bg-img.jpg')
@@ -1086,8 +1086,8 @@
         class="pt-[120px] pb-[195px] relative"
       >
         <div class="container">
-          <div class="grid lg:grid-cols-3">
-            <div>
+          <div class="lg:grid lg:grid-cols-3 md:gap-y-8 relative z-50">
+            <div class="relative z-50">
               <h4 class="caveat text-2xl text-ordinary font-bold">
                 Why Choose Ogenix
               </h4>
@@ -1108,9 +1108,9 @@
                 Shop Now
               </button>
             </div>
-            <div class="col-span-2">
-              <div class="relative ml-[64px] z-20">
-                <div class="absolute right-0 top-0">
+            <div class="col-span-2 md:mt-12">
+              <div class="relative lg:ml-[64px] md:ml-12 z-20">
+                <div class="absolute lg:right-0 top-0 right-[-240px]">
                   <img
                     src="./assets/images/testimonial-1-2.jpg"
                     alt=""
@@ -1134,7 +1134,7 @@
 
                 <div>
                   <div class="owl-carousel owl-theme">
-                    <div class="item text-center relative" style="width: 395px">
+                    <div class="item text-center relative">
                       <div
                         class="p-10 bg-white rounded-md r"
                         style="box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.1)"
@@ -1160,7 +1160,7 @@
                           to get such a personal simply the touch.
                         </p>
                         <div
-                          class="flex justify-between w-3/4 mx-auto mt-[26px]"
+                          class="flex justify-between w-[260px] mx-auto mt-[26px]"
                         >
                           <h3
                             class="text-xl leading-[30px] font-extrabold text-primary"
@@ -1184,7 +1184,7 @@
                         />
                       </div>
                     </div>
-                    <div class="item text-center relative" style="width: 395px">
+                    <div class="item text-center relative">
                       <div
                         class="p-10 bg-white rounded-md r"
                         style="box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.1)"
@@ -1234,7 +1234,7 @@
                         />
                       </div>
                     </div>
-                    <div class="item text-center relative" style="width: 395px">
+                    <div class="item text-center relative">
                       <div
                         class="p-10 bg-white rounded-md r"
                         style="box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.1)"
@@ -1291,7 +1291,7 @@
           </div>
         </div>
         <div
-          class="absolute opacity-[.10] bottom-[-10px]"
+          class="absolute opacity-[.10] bottom-[-10px] z-0 md:hidden"
           style="mix-blend-mode: luminosity"
         >
           <img src="./assets/images/testimonial-one__bg-img-2.png" alt="" />
@@ -1300,7 +1300,7 @@
           <img src="./assets/images/testimonial-one-shape-3.png" alt="" />
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- gallery -->
 
@@ -1711,7 +1711,7 @@
 
     <!-- subscribe -->
 
-    <!-- <section
+    <section
       class="subscribe z-40 relative mt-[120px] pt-[120px] overflow-x-clip"
     >
       <div class="container">
@@ -1735,8 +1735,8 @@
             <div class="absolute right-[-30px] top-0 opacity-40 z-0 float-x">
               <img src="./assets/images/subscribe-one-shape-3.png" alt="" />
             </div>
-            <div class="grid grid-cols-2 items-center">
-              <div class="flex items-center">
+            <div class="grid lg:grid-cols-2 items-center md:gap-y-8">
+              <div class="flex items-center md:justify-center">
                 <img src="./assets/images/subscribe.png" alt="" class="w-14" />
                 <div class="ml-4">
                   <h4
@@ -1753,7 +1753,7 @@
                 </div>
               </div>
 
-              <div class="text-end ml-24 relative z-10">
+              <div class="lg:text-end lg:ml-24 relative z-10">
                 <div class="absolute left-[-131px] -top-2 float-x">
                   <img src="./assets/images/subscribe-one-shape-6.png" alt="" />
                 </div>
@@ -1776,10 +1776,10 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- footer -->
 
-    <!-- <footer class="bg-primary relative z-10 -mt-20">
+    <footer class="bg-primary relative z-10 -mt-20">
       <div
         class="absolute -z-10 left-0 top-0 bottom-0 right-0 mix-blend-luminosity"
         style="
@@ -1799,10 +1799,7 @@
         class="container"
         style="padding-top: 208px !important; padding-bottom: 96px !important"
       >
-        <div
-          class="grid"
-          style="grid-template-columns: 30% 16% 25% 25%; gap: 10px"
-        >
+        <div class="grid footer-grid md:grid-cols-2 md:gap-y-8">
           <div>
             <img src="./assets/images/logo.png" alt="" />
             <h1
@@ -2027,7 +2024,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -2053,9 +2050,8 @@
         responsive: {
           0: {
             items: 1,
-            margin: 10,
           },
-          600: {
+          700: {
             items: 1,
           },
           1000: {
