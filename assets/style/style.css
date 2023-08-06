@@ -7,7 +7,7 @@ body {
   overflow-x: clip;
 }
 .mobile-menu {
-  transition: left 0.5s linear 0.1s;
+  transition: all 0.5s ease-in-out 0.1s !important;
 }
 .dark {
   transition: all 0.4s linear;

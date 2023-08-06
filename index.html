@@ -178,7 +178,7 @@
             </nav>
 
             <nav
-              class="fixed left-0 top-0 w-2/5 h-screen z-50 bg-primary text-white px-3 py-8 mobile-menu hidden"
+              class="fixed left-[-100%] top-0 md:w-2/5 w-3/5 h-screen z-50 bg-primary text-white px-3 py-8 mobile-menu lg:hidden"
             >
               <ul class="lg:flex items-center justify-between relative z-50">
                 <li class="mb-10 flex justify-between items-center">
@@ -331,7 +331,7 @@
 
     <!-- Services -->
 
-    <section class="services -mt-5 relative z-50">
+    <section class="services -mt-5 relative z-40">
       <div class="container" style="max-width: 1500px !important">
         <div
           style="box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07)"
@@ -565,7 +565,7 @@
 
     <!-- categories section -->
 
-    <section class="category pb-[60px]" data-aos="fade-up">
+    <section class="category pb-[60px]" ="fade-up">
       <div class="container">
         <div class="text-center pb-12">
           <h4 class="text-ordinary font-bold text-2xl caveat">
@@ -579,7 +579,10 @@
             customers
           </h2>
         </div>
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 gap-6"
+          data-aos="fade-up"
+        >
           <div class="category-card relative">
             <div class="relative category-img">
               <img
@@ -714,7 +717,7 @@
 
     <!-- banner -->
 
-    <section class="banner">
+    <section class="banner overflow-hidden">
       <div class="container">
         <div class="grid lg:grid-cols-2 gap-8">
           <div
@@ -750,8 +753,8 @@
             </div>
           </div>
           <div
-            data-aos="slide-left"
             class="w-full bg-ordinary relative p-12 rounded-2xl overflow-hidden"
+            data-aos="slide-left"
           >
             <div class="absolute top-[-10px] -right-4 z-30">
               <img src="./assets/images/banner-img-2.png" alt="" />
@@ -803,7 +806,7 @@
         </div>
         <div
           class="grid md:grid-cols-2 lg:grid-cols-5 gap-8"
-          data-aos="fade-up "
+          data-aos="fade-up"
         >
           <div
             class="border-[#eaeae2] border rounded-lg pb-8 product-card relative overflow-hidden"
@@ -1084,13 +1087,13 @@
       </div>
       <div
         class="absolute top-[-15px] right-0 z-0 lg:block hidden"
-        data-aos="slide-down"
+        ="slide-down"
       >
         <img src="./assets/images/why-choose-one-img-1.png" alt="" />
       </div>
       <div
         class="absolute bottom-[-15px] right-0 z-40 lg:block hidden"
-        data-aos="slide-up"
+        ="slide-up"
       >
         <img src="./assets/images/why-choose-one-img-2.png" alt="" />
       </div>
@@ -1120,10 +1123,7 @@
             Awesome farmers team <br />here to help you
           </h2>
         </div>
-        <div
-          class="grid lg:grid-cols-3 md:grid-cols-2 gap-8"
-          data-aos="fade-up "
-        >
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8" ="fade-up ">
           <div class="team-member">
             <div class="relative team-card">
               <div class="relative left-2">
@@ -1678,7 +1678,7 @@
             Latest news updates <br />& articles
           </h2>
         </div>
-        <div class="grid lg:grid-cols-3 gap-6" data-aos="fade-up ">
+        <div class="grid lg:grid-cols-3 gap-6" data-aos="fade-up">
           <div class="relative rondued-md blog-card lg:mb-0 mb-32">
             <div class="blog-card-img relative z-0 overflow-hidden rounded-md">
               <img src="./assets/images/news-1-1.jpg" alt="" class="w-full" />
@@ -2224,12 +2224,12 @@
         startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
         initClassName: "aos-init", // class applied after initialization
         animatedClassName: "aos-animate", // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        useClassNames: false, // if true, will add content of `` as classes on scroll
         disableMutationObserver: false, // disables automatic mutations' detections (advanced)
         debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
         throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        // Settings that can be overridden on per-element basis, by `-*` attributes:
         offset: 120, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 400, // values from 0 to 3000, with step 50ms
